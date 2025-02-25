@@ -21,14 +21,15 @@ touch-action: manipulation;
   background-color: #8b8b8b;
   border-radius: 10px 10px 50px 10px;
   padding: 20px;
-  box-shadow: 
-    -5px 0 0 #6b6b6b,
-    5px 0 0 #aaaaaa,
-    0 5px 0 #6b6b6b,
-    0 -5px 0 #aaaaaa;
   position: relative;
   transform: scale(0.9);
   transform-origin: center center;
+  /* Adiciona uma sombra branca para efeito de brilho, além das sombras originais */
+  box-shadow: 0 0 20px 5px rgba(255,255,255,0.5),
+              -5px 0 0 #6b6b6b,
+              5px 0 0 #aaaaaa,
+              0 5px 0 #6b6b6b,
+              0 -5px 0 #aaaaaa;
 }
 
 .screen-area {
@@ -86,7 +87,7 @@ touch-action: manipulation;
   gap: 1px;
   width: 40px;
   height: 40px;
-  /* Removida a borda para exibir apenas o objeto */
+  /* Borda removida para exibir apenas o objeto */
   /* border: 1px solid #00ff00; */
 }
 
